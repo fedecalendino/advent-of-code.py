@@ -14,9 +14,7 @@ def part_02(measures: list) -> int:
     return part_01(
         list(
             map(
-                lambda index: measures[index]
-                + measures[index + 1]
-                + measures[index + 2],
+                lambda index: sum(measures[index: index + 2]),
                 range(len(measures) - 2),
             )
         )
