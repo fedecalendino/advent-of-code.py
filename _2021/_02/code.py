@@ -45,7 +45,9 @@ test_values = utils.read("test.txt", formatter)
 input_values = utils.read("input.txt", formatter)
 
 assert part_01(test_values) == 150
+assert part_01(input_values) == 1746616
 print("Part 01:", part_01(input_values))
 
 assert part_02(test_values) == 900
+assert part_02(input_values) == 1741971043
 print("Part 02:", part_02(input_values))
