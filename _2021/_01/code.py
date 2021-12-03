@@ -25,7 +25,9 @@ test_values = utils.read("test.txt", int)
 input_values = utils.read("input.txt", int)
 
 assert part_01(test_values) == 7
+assert part_01(input_values) == 1292
 print("Part 01:", part_01(input_values))
 
 assert part_02(test_values) == 5
+assert part_02(input_values) == 1230
 print("Part 02:", part_02(input_values))
