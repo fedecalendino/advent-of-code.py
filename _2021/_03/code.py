@@ -31,28 +31,22 @@ def most_common_values(diagnostic_report: list):
     )
 
 
-def find_rating(diagnostic_report: list, keep_value: int):
-    index = -1
+def find_rating(report: list, keep_value: int, index: int = 0):
+    if len(report) == 1:
+        return bin2dec(report[0])
 
-    report = diagnostic_report
+    mcv = most_common_values(report)[index]
 
-    while len(report) > 1:
-        index += 1
+    tmp = []
 
-        mcv = most_common_values(report)[index]
-
-        tmp = []
-
-        for item in report:
-            if mcv is None:
-                if item[index] == keep_value:
-                    tmp.append(item)
-            elif (item[index] == mcv) == keep_value:
+    for item in report:
+        if mcv is None:
+            if item[index] == keep_value:
                 tmp.append(item)
+        elif (item[index] == mcv) == keep_value:
+            tmp.append(item)
 
-        report = tmp
-
-    return bin2dec(report[0])
+    return find_rating(tmp, keep_value, index + 1)
 
 
 def part_01(diagnostic_report: list) -> int:
