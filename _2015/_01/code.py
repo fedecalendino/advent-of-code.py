@@ -37,9 +37,11 @@ assert part_01("(()(()(") == 3
 assert part_01("))(((((") == 3
 assert part_01(")())())") == -3
 
+assert part_01(input_values) == 232
 print("Part 01:", part_01(input_values))
 
 assert part_02(")") == 1
 assert part_02("()())") == 5
 
+assert part_02(input_values) == 1783
 print("Part 02:", part_02(input_values))
