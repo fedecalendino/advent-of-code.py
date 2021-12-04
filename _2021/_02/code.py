@@ -36,7 +36,7 @@ def part_02(commands: list) -> int:
     return horizontal * depth
 
 
-def formatter(command: str):
+def formatter(command: str) -> tuple[str, int]:
     direction, value = command.split()
     return direction, int(value)
 
