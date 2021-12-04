@@ -65,13 +65,12 @@ def part_02(diagnostic_report: list) -> int:
     return oxygen_generator_rating * co2_scrubber_rating
 
 
-def formatter(line: str):
+def formatter(line: str) -> list[int]:
     return list(map(int, line))
 
 
 test_values = utils.read("test.txt", formatter)
 input_values = utils.read("input.txt", formatter)
-
 
 assert part_01(test_values) == 198
 assert part_01(input_values) == 3959450
