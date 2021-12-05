@@ -3,6 +3,7 @@
 ## [2015](https://adventofcode.com/2015)
 
 * [Day 01: Not Quite Lisp](https://github.com/fedecalendino/adventofcode/tree/main/_2015/_01)
+* [Day 02: I Was Told There Would Be No Math](https://github.com/fedecalendino/adventofcode/tree/main/_2015/_02)
 
 
 ## [2021](https://adventofcode.com/2021)
