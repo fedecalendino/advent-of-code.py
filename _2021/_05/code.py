@@ -1,6 +1,7 @@
-import utils
-from math import atan2, degrees
 from collections import defaultdict
+from math import atan2, degrees
+
+import utils
 
 
 def angle(x1: int, y1: int, x2: int, y2: int):

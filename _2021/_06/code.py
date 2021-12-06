@@ -1,6 +1,6 @@
-import utils
-
 from collections import defaultdict
+
+import utils
 
 
 def solution(fishes: list[int], days: int):

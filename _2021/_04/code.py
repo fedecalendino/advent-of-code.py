@@ -1,6 +1,7 @@
+from collections import defaultdict
+
 import aux
 import utils
-from collections import defaultdict
 
 
 def check_row(boards: list, board: int, row: int) -> bool:
