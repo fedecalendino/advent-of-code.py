@@ -1,16 +1,14 @@
-from collections import defaultdict
-
 import utils
 
 
 def solution(fishes: list[int], days: int):
-    timers = defaultdict(lambda: 0)
+    timers = [0] * 10
 
     for fish in fishes:
         timers[fish] += 1
 
     for _ in range(days):
-        snapshot = defaultdict(lambda: 0)
+        snapshot = [0] * 10
 
         for days_left in range(0, 9):
             if days_left == 0:
@@ -21,7 +19,7 @@ def solution(fishes: list[int], days: int):
 
         timers = snapshot
 
-    return sum(timers.values())
+    return sum(timers)
 
 
 def formatter(line: str) -> list[int]:
