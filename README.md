@@ -13,7 +13,8 @@
 
 ## [2019](https://adventofcode.com/2019)
 
-* [Day 1: The Tyranny of the Rocket Equation](https://github.com/fedecalendino/adventofcode/tree/main/_2019/_01)
+* [Day 01: The Tyranny of the Rocket Equation](https://github.com/fedecalendino/adventofcode/tree/main/_2019/_01)
+* [Day 02: 1202 Program Alarm](https://github.com/fedecalendino/adventofcode/tree/main/_2019/_02)
 
 
 
