@@ -6,7 +6,7 @@ def part_01(file: str, noun: int = 12, verb: int = 2):
     program[1] = noun
     program[2] = verb
 
-    return program.run()
+    return program.run()[0]
 
 
 def part_02(file: str):

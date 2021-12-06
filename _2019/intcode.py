@@ -52,7 +52,7 @@ class IntCode:
             while True:
                 next(self)
         except StopIteration:
-            return self[0]
+            return self
 
 
 def from_file(file: str) -> "IntCode":
@@ -63,11 +63,7 @@ def from_file(file: str) -> "IntCode":
 
 
 def test():
-    tests = [("_02/input.txt", 490699)]
-
-    for file, expected in tests:
-        print(f"testing {file}: {expected}")
-        assert from_file(file).run() == expected
+    assert from_file("_02/input.txt").run()[0] == 490699
 
 
 if __name__ == "__main__":
