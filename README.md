@@ -9,6 +9,7 @@
 * [Day 04: Giant Squid](https://github.com/fedecalendino/adventofcode/tree/main/_2021/_04)
 * [Day 05: Hydrothermal Venture](https://github.com/fedecalendino/adventofcode/tree/main/_2021/_05)
 * [Day 06: Lanternfish](https://github.com/fedecalendino/adventofcode/tree/main/_2021/_06)
+* [Day 07: The Treachery of Whales](https://github.com/fedecalendino/adventofcode/tree/main/_2021/_07)
 
 
 ## [2019](https://adventofcode.com/2019)
