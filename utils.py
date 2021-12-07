@@ -13,6 +13,10 @@ def read(file: str, mapper: callable = str) -> list:
     )
 
 
+def read_ints(file: str, sep: str = ","):
+    return list(map(int, read(file)[0].split(sep)))
+
+
 def timeit(method):
     def wrapper(*args, **kw):
         start = time()

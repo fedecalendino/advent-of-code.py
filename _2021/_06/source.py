@@ -26,8 +26,8 @@ def formatter(line: str) -> list[int]:
     return list(map(int, line.split(",")))
 
 
-test_values = utils.read("test.txt", formatter)[0]
-input_values = utils.read("input.txt", formatter)[0]
+test_values = utils.read_ints("test.txt")
+input_values = utils.read_ints("input.txt")
 
 assert solution(test_values, days=18) == 26
 assert solution(test_values, days=80) == 5934

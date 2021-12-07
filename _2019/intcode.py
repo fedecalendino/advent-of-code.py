@@ -143,10 +143,8 @@ class IntCode:
 
 
 def from_file(file: str, *input_) -> "IntCode":
-    with open(file) as f:
-        line = f.readline().strip()
-        memory = list(map(int, line.split(",")))
-        return IntCode(memory, *input_)
+    memory = utils.read_ints(file)
+    return IntCode(memory, *input_)
 
 
 def test():
