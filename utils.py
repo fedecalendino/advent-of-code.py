@@ -13,6 +13,15 @@ def read(file: str, mapper: callable = str) -> list:
     )
 
 
+def read_chars(file: str, sep: str = ","):
+    line = read(file)[0]
+
+    if sep:
+        return line.split(sep)
+
+    return list(line)
+
+
 def read_ints(file: str, sep: str = ","):
     return list(map(int, read(file)[0].split(sep)))
 
