@@ -1,0 +1,17 @@
+def show(display: dict[str, str]):
+    a = display.get("A", "-")
+    b = display.get("B", "|")
+    c = display.get("C", "|")
+    d = display.get("D", "-")
+    e = display.get("E", "|")
+    f = display.get("F", "|")
+    g = display.get("G", "-")
+
+    print(f" {a}{a}{a}{a} ")
+    print(f"{b}    {c}")
+    print(f"{b}    {c}")
+    print(f" {d}{d}{d}{d} ")
+    print(f"{e}    {f}")
+    print(f"{e}    {f}")
+    print(f" {g}{g}{g}{g} ")
+    print()
