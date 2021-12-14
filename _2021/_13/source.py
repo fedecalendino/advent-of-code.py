@@ -1,4 +1,4 @@
-import utils
+from aux import read
 
 
 def show(dots: set[tuple[int, int]]):
@@ -37,24 +37,6 @@ def part_01(dots: set[tuple[int, int]], folds: list[tuple, str, int]) -> int:
 
 def part_02(dots: set[tuple[int, int]], folds: list[tuple, str, int]) -> set[tuple[int, int]]:
     return fold(dots, folds)
-
-
-def read(file: str):
-    dots = set()
-    folds = list()
-
-    for line in utils.read(file):
-        if not line:
-            continue
-
-        if line.startswith("fold along"):
-            coordinate, value = line.replace("fold along ", "").split("=")
-            folds.append((coordinate, int(value)))
-        else:
-            x, y = line.split(",")
-            dots.add((int(y), int(x)))
-
-    return dots, folds
 
 
 test_values = read("test.txt")
